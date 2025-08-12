@@ -37,9 +37,9 @@ setup(
     install_requires=requirements,
     extras_require={"dev": requirements_dev},
     packages=find_packages(),
-    # entry_points={
-    #     "console_scripts": [
-    #         "cli=kforge.cli:main",
-    #     ],
-    # },
+    entry_points={
+        "console_scripts": [
+            "kforge=kforge.cli:main",
+        ],
+    },
 )
